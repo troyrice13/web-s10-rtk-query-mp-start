@@ -1,5 +1,5 @@
 import React, { useReducer } from 'react'
-import { useCreateQuoteMutation, useDeleteQuoteMutation, useToggleQuoteMutation } from '../state/quotesApi'
+import { useCreateQuoteMutation } from '../state/quotesApi'
 
 const CHANGE_INPUT = 'CHANGE_INPUT'
 const RESET_FORM = 'RESET_FORM'

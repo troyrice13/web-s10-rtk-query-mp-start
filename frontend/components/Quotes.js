@@ -4,12 +4,11 @@ import {
   setHighlightedQuote,
   toggleVisibility,
 } from '../state/quotesSlice'
-import { useGetQuotesQuery, useCreateQuoteMutation, useToggleFakeMutation, useDeleteQuoteMutation, } from '../state/quotesApi'
+import { useGetQuotesQuery, useToggleFakeMutation, useDeleteQuoteMutation, } from '../state/quotesApi'
 
 export default function Quotes() {
   const {
     data: quotes,
-    error: quotesError,
     isLoading: gettingQuotes,
     isFetching: refreshingQuotes
   } =  useGetQuotesQuery()
